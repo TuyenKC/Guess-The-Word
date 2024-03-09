@@ -117,6 +117,9 @@ document.addEventListener('keydown', function(e){
         }
     }
 })
+gameGuessing.addEventListener('click', function(){
+    gameGuessing.focus();
+});
 function init(){
     triesText.innerHTML = `Tries (${currentTries}/${maxTries}): `;
     getNewWord();
